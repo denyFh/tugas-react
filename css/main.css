@@ -150,6 +150,18 @@ iframe {
   text-transform: uppercase;
 }
 
+.f16 {
+  font-size: 16px!important;
+}
+
+.f18 {
+  font-size: 18px!important;
+}
+
+.f20 {
+  font-size: 20px!important;
+}
+
 .bg1 {background-color: #3b5998}
 .bg2 {background-color: #1da1f2}
 .bg3 {background-color: #ea4335}
