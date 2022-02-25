@@ -150,11 +150,25 @@ iframe {
   text-transform: uppercase;
 }
 
+.f16 {
+  font-size: 16px!important;
+}
+
+.f18 {
+  font-size: 18px!important;
+}
+
+.f20 {
+  font-size: 20px!important;
+}
+
 .bg1 {background-color: #3b5998}
 .bg2 {background-color: #1da1f2}
 .bg3 {background-color: #ea4335}
 
-
+.text-white {
+  color: white!important;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
@@ -182,9 +196,10 @@ iframe {
 
 .wrap-login100 {
   width: 500px;
-  background: #fff;
+  background: rgb(80, 39, 134);
   border-radius: 10px;
   overflow: hidden;
+  color: white!important;
 }
 
 
@@ -199,7 +214,7 @@ iframe {
   display: block;
   font-family: Poppins-Bold;
   font-size: 39px;
-  color: #333333;
+  color: white!important;
   line-height: 1.2;
   text-align: center;
 }
@@ -218,7 +233,7 @@ iframe {
 .label-input100 {
   font-family: Poppins-Regular;
   font-size: 14px;
-  color: #333333;
+  color: white!important;
   line-height: 1.5;
   padding-left: 7px;
 }
@@ -226,7 +241,7 @@ iframe {
 .input100 {
   font-family: Poppins-Medium;
   font-size: 16px;
-  color: #333333;
+  color: white!important;
   line-height: 1.2;
 
   display: block;
