@@ -1,0 +1,174 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/sample-pattern.png);
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/* Navbar CSS */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.nav .logo-container {
+    display: inline;
+}
+
+.nav .logo-container .logo {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav .logo-container .logo img {
+    height: 30px;
+}
+
+.nav .nav-burger {
+    display: none;
+}
+
+.nav .nav-menu {
+    display: inline;
+    float: right;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.nav .nav-menu a {
+    display: inline-block;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.nav .nav-menu a:hover {
+    color: rgba(255, 0, 119, 0.5);
+}
+
+.nav #nav-click {
+    display: none;
+}
+
+/* Content CSS */
+
+.content-container {
+    margin: 80px 60px 80px 60px;
+}
+
+.content-container .title {
+    text-align: center;
+    color: slateblue;
+}
+
+.content-container .content {
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.content-container .content .post {
+    padding: 10px 20px 3px 20px;
+}
+
+.content-container .content .post:not(:last-child) {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.content-container .content .post .post-title {
+    color: dodgerblue;
+}
+
+/* Footer CSS */
+
+footer {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .nav .nav-burger {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav .nav-burger label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav .nav-burger label:hover,
+    .nav #nav-click:checked ~ .nav-burger label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav .nav-burger label span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 3px solid #000;
+    }
+
+    .nav .nav-menu {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav .nav-menu a {
+        display: block;
+        width: 100%;
+        color: white;
+    }
+
+    .nav .nav-menu a:hover {
+        color: rgba(255, 0, 119, 0.5);
+        background-color: #f6f6f6;
+    }
+
+    .nav #nav-click:not(:checked) ~ .nav-menu {
+        height: 0px;
+    }
+
+    .nav #nav-click:checked ~ .nav-menu {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+    .content-container {
+        margin: 80px 0px 80px 0px;
+    }
+}
